@@ -1,0 +1,19 @@
+.text{
+	position: absolute;
+	top: 0;
+	left: 225;
+}
+
+.text2{
+	width: 550px;
+	position: absolute;
+	left: 225;
+	top: 75;
+}
+
+.vini{
+	position: absolute;
+	left: 700;
+}
+
+
