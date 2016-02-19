@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang = "pt-br">
+	<head>
+		<title>Posicionamento com CSS3</title>		
+		<meta charsr = "utf-8">
+		<link rel = "stylesheet" href = "posicionamento3.css" type = "text/css">
+	</head>
+	<body>
+		<div class =  "imagi">
+			<img src = "fig03.png" alt = "Fror">
+		</div>
+		<div class =  "text">
+			<h1>
+				<p>Soneto da Fidelidade</p>
+			</h1>
+		</div>	
+		<div = class = "text2">
+			<p>De tudo ao meu amor serei atento Antes, e com tal zelo, e sempre, e tanto Que mesmo em face do maior encanto Dele se encante mais meu pensamento. Quero vivê-lo em cada vão momento E em seu louvor hei de espalhar meu canto Rir meu riso e derramar meu pranto</p>
+		</div>	
+		<div = class = "text3">
+			<p>Ao seu pesar ou seu contentamento</p>
+			<p>E assim, quando mais tarde me procur Quem sabe a morte, angústia de quem vive Quem sabe a solidão, fim de quem ama</p> 
+			<p>Eu possa me dizer do amor (que tive): Que não seja imortal, posto que é chama Mas que seja infinito enquanto dure.</p>
+		</div>
+		<div class = "vini">
+			<h5>
+				<p>Vinícius de Morais</p>
+			</h5>
+		</div>
+	</body>
+</html>
