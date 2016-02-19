@@ -1,0 +1,23 @@
+# WEB
+<!DOCTYPE HTML>
+<html lang = "pt-br">
+	<head>
+		<title>Posicionamento com CSS</title>		
+		<meta charsr = "utf-8">
+		<link rel = "stylesheet" href = "posicionamento.css" type = "text/css">
+	</head>
+	<body>
+		<div class =  "esqcima">
+			<p>Esquerda em Cima</p>
+		</div>
+		<div class =  "esqbaixo">
+			<p>Esquerda Embaixo</p>
+		</div>
+		<div class =  "dircima">
+			<p>Direita em Cima</p>
+		</div>	
+		<div class =  "dirbaixo">
+			<p>Direita Embaixo</p>
+		</div>		
+	</body>
+</html>
