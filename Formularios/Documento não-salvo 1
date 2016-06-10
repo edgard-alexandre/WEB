@@ -1,4 +1,0 @@
-<?php
-	require_once 'funcoes.php';
-	
-	define('DB-HOST', 'localhost')
