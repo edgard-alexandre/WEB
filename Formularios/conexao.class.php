@@ -3,7 +3,7 @@
 		var $host = "localhost";
 		var $user = "root";
 		var $password = "root";
-		var $database = "BD";
+		var $database = "BD_CEFETMG";
 		var $link;
 		var $query;
 		var $result;
@@ -49,7 +49,7 @@
 		
 		function inserirAluno($nome, $dataNasc, $foto){
 			$sqlAluno = "insert into aluno (nome, dataNasc, foto) VALUES ('$nome', '$dataNasc', '$foto')";
-			$this->executeQuery($sqlaluno);
+			$this->executeQuery($sqlAluno);
 			
 		}
 		

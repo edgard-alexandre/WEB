@@ -16,7 +16,7 @@
 			
 		}
 		
-		public function SetNome($nome){
+		public function setNome($nome){
 			$this->nome = $nome;
 			
 		}
@@ -26,7 +26,7 @@
 			
 		}
 		
-		public function SetDataNasc($dataNasc){
+		public function setDataNasc($dataNasc){
 			$data = explode('/', $dataNasc);
 			$this->dataNasc = "$data[2]-$data[1]-$data[0]";
 			
@@ -37,7 +37,7 @@
 			
 		}
 		
-		public function SetFoto($foto){
+		public function setFoto($foto){
 			$this->foto = $foto;
 			
 		}

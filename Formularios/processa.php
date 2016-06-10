@@ -13,26 +13,26 @@
 		echo "Tamanho do arquivo incorreto! <br>";
 		$dadosOK = false;
 	}else{
-		if(($arq['type']!="image/gif") && ($arq['type']!="image/jpeg") && ($arq['type']!="image/jpg") && ($arq['type']!="image/png") && ($arq['type']!="image/bmp")){
+		if(($arquivo['type']!="image/gif") && ($arquivo['type']!="image/jpeg") && ($arquivo['type']!="image/jpg") && ($arquivo['type']!="image/png") && ($arquivo['type']!="image/bmp")){
 			echo "Tipo de arquivo não permitido <br>";
 			$dadosOK = false;				
 		}else{
 			$file_src = '../tmp'.$_FILES['txtFoto']['name'];
-			if(!move_uploaded_files($_FILES['txFoto']['tmp_name'], $file_src)){
+			if(!move_uploaded_file($_FILES['txtFoto']['tmp_name'], $file_src)){
 				echo "Erro ao mover o arquivo <br>";
 				$dadosOK = false;			
 			}		
 		}
 		if($dadosOK){
-			$mysqlimg = addslashes(fread(fopen($files_src, "rb"), $arquivo['size']));
+			$mysqlimg = addslashes(fread(fopen($file_src, "rb"), $arquivo['size']));
 			$aluno = new Aluno($_POST["txtNome"], $_POST["txtData"], $mysqlimg);
-			$mySQL = new MySQL;
+			$MySQL = new MySQL;
 
 			try{
-				$MySQL -> inserirAluno($aluno -> getNome(), $aluno -> getDataNasc(), $aluno -> getFoto());
+				$MySQL -> inserirAluno($aluno->getNome(), $aluno->getDataNasc(), $aluno->getFoto());
 				echo "Dados inseridos com sucesso <br>";
 			}catch(Exception $e){
-				echo "Erro ao inserir: ", $e -> getMessage() . "<br>";			
+				echo "Erro ao inserir: ", $e -> getMessage()."<br>";			
 			}
 		}
 	}
