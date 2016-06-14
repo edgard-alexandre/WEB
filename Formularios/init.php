@@ -6,9 +6,8 @@
 	define('DB-PASS', 'root');
 	define('DB-NAME', 'BD_CEFETMG');
 
-	init_set('display_error, true');
-	error_reporting(E-ALL);
+	init_set('display_errors', true);
+    error_reporting(E_ALL);
 
-	date_default_timezone_set(America/Sao_Paulo);
-
+	date_default_timezone_set('America/Sao_Paulo');
 ?>

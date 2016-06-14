@@ -11,5 +11,6 @@
 			sscanf($date,'%d/%d/%d', $d,$m,$y);		
 			return sprint('%4d/%02d/%02d',$y,$m,$d);
 		}
+		return false;
 	}
 ?>
