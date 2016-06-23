@@ -3,7 +3,7 @@ body{
 }
 
 img{
-	position: absolute;
+	position: fixed;
 	top: 10px;
 	left: 12px;
 }
@@ -22,7 +22,7 @@ img{
 	border-radius: 2px;
 	font-size: 20px;
 	color: white;
-	position: absolute;
+	position: fixed;
 	top: -15px;
 }
 
@@ -41,7 +41,7 @@ a{
 
 .rodape{
 	background-color: #FF9900;
-	position: absolute;
+	position: fixed;
 	bottom: 5px;
 	width: 1586px;
 	height: 66px;
@@ -136,4 +136,9 @@ a{
 	left: 25px;
 	font-size: 20px;
 	color: orange;
+}
+
+.tabelaClientes{
+	position: absolute;
+	top: 150px;
 }
