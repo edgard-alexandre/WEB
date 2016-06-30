@@ -31,7 +31,7 @@
 		<div class="topo">
 			<ul class = "menu">
 				<li><a href="index.php">Home</a></li>
-				<li><a href="form-add.php">Clientes</a></li>
+				<li><a href="sla.php">Clientes</a></li>
 				<li><a href="#">Fornecedores</a></a></li>
 				<li><a href="sobre.html">Sobre</a></li>
 			</ul>

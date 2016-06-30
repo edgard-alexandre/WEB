@@ -22,9 +22,9 @@
 
 	// insere no BD
 	$PDO = db_connect();
-	$sql = "INSERT INTO clientes(nomeCliente,email,dataCadastro) VALUES (:name,:email,:dataCadastro)";
+	$sql = "INSERT INTO clientes(nomeCliente,email,dataCadastro) VALUES (:nomeCliente,:email,:dataCadastro)";
 	$stmt = $PDO->prepare($sql);
-	$stmt->bindParam(':name',$cliente->getNome());
+	$stmt->bindParam(':nomeCliente',$cliente->getNome());
 	$stmt->bindParam(':email',$cliente->getEmail());
 	$stmt->bindParam(':dataCadastro',$cliente->getDataCadastro());
 
