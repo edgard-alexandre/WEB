@@ -20,7 +20,7 @@
     WHERE idCliente = :id";
     $stmt = $PDO->prepare($sql);
     $stmt-> bindParam(':nomeCliente',$cliente->getNome());
-    $stmt-> bindParam(':dataCadastro',$cliente->getDataCliente());
+    $stmt-> bindParam(':dataCliente',$cliente->getDataCliente());
     $stmt-> bindParam(':email',$cliente->getEmail());
     $stmt-> bindParam(':id',$id ,PDO :: PARAM_INT);
     if ($stmt->execute())

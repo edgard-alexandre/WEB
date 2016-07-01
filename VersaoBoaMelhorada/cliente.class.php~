@@ -1,6 +1,6 @@
 //OK
 <?php
- 	class clientes{
+ 	class clientes
 		private $nome;
 		private $email;
 		private $dataCadastro;
